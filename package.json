@@ -1,0 +1,49 @@
+{
+  "name": "dsh-gsap",
+  "version": "2.0.1",
+  "description": "GSAP skills plugin for DeepSeek Harness: registers the eight official GSAP AI skills from the bundled package. No toggle, no browser half, no configuration, account or API key.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "skills",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "LICENSE.gsap-skills"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eryi-lab/dsh-gsap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eryi-lab/dsh-gsap/issues"
+  },
+  "homepage": "https://github.com/eryi-lab/dsh-gsap#readme",
+  "author": "eryi-lab",
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "dsh-plugin",
+    "skills",
+    "gsap",
+    "animation",
+    "scrolltrigger"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": "^22.19.0 || >=24.0.0"
+  }
+}

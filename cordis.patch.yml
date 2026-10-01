@@ -1,0 +1,16 @@
+# dsh-gsap：把 GSAP 官方 8 个 AI 技能注册进 DSH。
+#
+# 宿主半边只有一处声明：把插件挂到 Loader 树上。
+#   - 不注册工具，不依赖网络、账号或密钥；
+#   - config 留空即可工作（默认注册全部 8 个技能）。
+#
+# 只想注册子集时，在 profile 的 cordis.patch.yml 里按 id 覆盖：
+#
+#   - id: gsap
+#     config:
+#       skills: [gsap-core, gsap-scrolltrigger]
+#
+- insert:
+    - id: gsap
+      name: dsh-gsap
+      config: {}
