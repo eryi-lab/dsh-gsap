@@ -1,0 +1,12 @@
+# Keep line endings consistent so a Windows checkout does not show spurious diffs.
+* text=auto
+
+# This repo stores text as LF; Windows batch files keep CRLF.
+*.md   text eol=lf
+*.yml  text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.js   text eol=lf
+*.mjs  text eol=lf
+*.cmd  text eol=crlf
+.gitattributes text eol=lf
