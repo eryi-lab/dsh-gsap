@@ -27,7 +27,7 @@
     "url": "https://github.com/eryi-lab/dsh-gsap/issues"
   },
   "homepage": "https://github.com/eryi-lab/dsh-gsap#readme",
-  "author": "eryi-lab",
+  "author": "Doro (eryi-lab)",
   "dsh": {
     "bundle": {
       "patch": "./cordis.patch.yml"
