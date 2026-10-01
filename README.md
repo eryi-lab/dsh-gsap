@@ -14,10 +14,16 @@ From the plugin market (Settings → Plugins), or:
 dsh plugin --profile <your-profile> add dsh-gsap
 ```
 
-Installing from source instead of npm:
+Installing the prebuilt tarball from the GitHub release (no npm account or build step needed):
 
 ```sh
-dsh plugin --profile <your-profile> add github:<owner>/dsh-gsap
+dsh plugin --profile <your-profile> add https://github.com/eryi-lab/dsh-gsap/releases/latest/download/dsh-gsap.tgz
+```
+
+Installing from source instead:
+
+```sh
+dsh plugin --profile <your-profile> add github:eryi-lab/dsh-gsap
 ```
 
 Restart DSH Desktop afterwards — a bundle is read at boot and cannot be hot-loaded.

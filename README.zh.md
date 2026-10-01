@@ -14,10 +14,16 @@
 dsh plugin --profile <你的 profile> add dsh-gsap
 ```
 
+从 GitHub Release 安装预构建包（无需 npm 账号，也不需要本地构建）：
+
+```sh
+dsh plugin --profile <你的 profile> add https://github.com/eryi-lab/dsh-gsap/releases/latest/download/dsh-gsap.tgz
+```
+
 从源码仓库安装：
 
 ```sh
-dsh plugin --profile <你的 profile> add github:<owner>/dsh-gsap
+dsh plugin --profile <你的 profile> add github:eryi-lab/dsh-gsap
 ```
 
 装完**重启 DSH Desktop**（bundle 在启动时读取，不能热加载）。
